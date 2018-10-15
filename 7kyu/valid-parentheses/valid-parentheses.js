@@ -6,12 +6,11 @@
 // "(())((()())())"  =>  true
 
 function validParens(parens) {
-  let indent = 0;
-  for (let i = 0; i < parens.length && indent >= 0; i++) {
-    indent += parens[i] == "(" ? 1 : -1;
+  let count = 0;
+  for (let i = 0; i < parens.length && count >= 0; i++) {
+    count += parens[i] == "(" ? 1 : -1;
   }
-
-  return indent == 0;
+  return count == 0;
 }
 
 console.log(validParens("()))"));
