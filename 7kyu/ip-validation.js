@@ -10,7 +10,4 @@ function isValidIP(str) {
   );
 }
 
-console.log(isValidIP("1e0.1e1.1e2.2e2"));
-// console.log(isValidIP("123.045.067.089"));
-// console.log(isValidIP("1.2.3.4"));
-// console.log(isValidIP("123.45.67.89"));
+//This is my favorite answer
